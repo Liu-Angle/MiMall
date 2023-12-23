@@ -1,0 +1,1060 @@
+/* 通用设置 */
+@charset "UTF-8";
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: white;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  /* 取消下划线 */
+}
+
+ul {
+  /* 移除列表样式 */
+  list-style-type: none;
+  /* 取消左边的圆点 */
+}
+
+.Margins {
+  margin: 0 10%;
+  /* 左右外边距都设置为10% */
+}
+
+
+/* 最右边功能栏设置 */
+#ControlBar {
+  top: 15%;
+  left: 94.5%;
+  position: fixed;
+  z-index: 2;
+  /* 脱离所有页面布局并固定位置 */
+}
+
+#ControlBar a {
+  display: block;
+  width: 82px;
+  height: 90px;
+  border: 1px solid #F5F5F5;
+  color: #757575;
+  margin-bottom: -1px;
+  /* 边框重合 */
+  font-size: 14px;
+  text-align: center;
+  line-height: 135px;
+  background-size: 30px;
+  /* 背景大小 */
+  background-repeat: no-repeat;
+  /* 背景不重复 */
+  background-position: 27px 20px;
+  /* 背景图片位置 */
+}
+
+.cbi {
+  width: 30px;
+  height: 30px;
+}
+
+/* （鼠标经过通用设置）这里本来想把所有鼠标经过时的背景属性放进去，结果发现这样不起作用，只有这个字体颜色可以 */
+#手机APP:hover,
+#个人中心:hover,
+#售后服务:hover,
+#人工客服:hover,
+#购物车:hover,
+#回到顶部:hover {
+  color: #FF6700;
+}
+
+#手机APP {
+  background: url(../images/手机APP1.png);
+  background-color: white;
+}
+
+#手机APP:hover {
+  background: url(../images/手机APP2.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 27px 20px;
+  background-color: white;
+}
+
+#付款 {
+  position: absolute;
+  width: 128px;
+  height: 192px;
+  right: 90px;
+  top: -.1%;
+  display: none;
+}
+
+#手机APP:hover #付款 {
+  display: block;
+}
+
+#个人中心 {
+  background: url(../images/个人中心1.png);
+  background-color: white;
+}
+
+#个人中心:hover {
+  background: url(../images/个人中心2.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 27px 20px;
+  background-color: white;
+}
+
+#售后服务 {
+  background: url(../images/售后服务1.png);
+  background-color: white;
+}
+
+#售后服务:hover {
+  background: url(../images/售后服务2.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 27px 20px;
+  background-color: white;
+}
+
+#人工客服 {
+  background: url(../images/人工客服1.png);
+  background-color: white;
+}
+
+#人工客服:hover {
+  background: url(../images/人工客服2.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 27px 20px;
+  background-color: white;
+}
+
+#购物车 {
+  background: url(../images/购物车1.png);
+  background-color: white;
+}
+
+#购物车:hover {
+  background: url(../images/购物车2.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 27px 20px;
+  background-color: white;
+}
+
+#间距 {
+  height: 15px;
+}
+
+#回到顶部 {
+  background: url(../images/回到顶部1.png);
+  background-color: white;
+}
+
+#回到顶部:hover {
+  background: url(../images/回到顶部2.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 27px 20px;
+  background-color: white;
+}
+
+
+/* 最上面的黑色导航栏 */
+
+/* 块元素水平垂直居中 */
+.nd1Center {
+  line-height: 40px;
+  text-align: center;
+}
+
+#n1 {
+  height: 40px;
+  background-color: #333;
+}
+
+#nd1 {
+  height: 40px;
+}
+
+#nd2 {
+  float: left;
+  height: 40px;
+}
+
+#nd3 {
+  float: right;
+}
+
+#shopping {
+  float: right;
+  width: 120px;
+  height: 40px;
+  color: #B0B0B0;
+  background-color: #424242;
+  font-size: 12px;
+}
+
+#shopping img {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin: 10px -200px 0 18px;
+}
+
+#shopping1 {
+  width: 316px;
+  right: 7%;
+  padding-top: 15px;
+  background-color: white;
+  position: absolute;
+  /* 脱离父级 */
+  z-index: 1;
+  display: none;
+}
+
+#shopping:hover #shopping1 {
+  display: block;
+}
+
+#shopping:hover {
+  color: #FF6700;
+  background-color: white;
+
+}
+
+#shopping2 {
+  margin: 5px 20px 20px;
+  padding: 20px 0px;
+  font-size: 12px;
+  color: #000;
+}
+
+#nd1 a {
+  color: #B0B0B0;
+  font-size: 12px;
+}
+
+#nd1 a:hover {
+  color: white;
+}
+
+#登录 {
+  padding: 0px 5px;
+}
+
+#消息通知 {
+  padding: 0px 10px;
+}
+
+span {
+  color: #424242;
+}
+
+
+/* 头部导航栏内容 */
+
+/* 块元素水平垂直居中 */
+.hd1Center {
+  line-height: 100px;
+  text-align: center;
+}
+
+#hd1 {
+  height: 100px;
+}
+
+/* 图标设置 */
+#himg {
+  width: 56px;
+  height: 56px;
+  margin-top: 22px;
+}
+
+#hd2 {
+  padding: 12px 0px 0px 228px;
+  width: 620px;
+}
+
+.ht1 {
+  z-index: 1;
+  /* 让下拉框显示在最上层 */
+  text-align: center;
+  background-color: white;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #e0e0e0;
+  padding: 0 10%;
+  top: 140px;
+  /* 距离顶部的像素 */
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  /* 阴影 */
+  position: absolute;
+  /* 脱离父级 */
+  display: none;
+  /* 隐藏弹出框 */
+  border-collapse: collapse;
+  /* 合并表格线条 */
+}
+
+.hl1:hover .ht1 {
+  display: block;
+  /* 鼠标经过显示 */
+}
+
+#hd3 {
+  float: left;
+}
+
+.hp {
+  line-height: 75px;
+  color: black;
+  padding: 0 7px;
+}
+
+.hp:hover {
+  color: #FF6700;
+}
+
+/* 名称样式 */
+.ht1 a {
+  font-size: 12px;
+}
+
+.ht1 td {
+  padding-right: 55px;
+}
+
+/* 价格样式 */
+.ht1 p {
+  text-align: center;
+  font-size: 12px;
+  color: #FF6700;
+}
+
+.hl1 {
+  float: left;
+  /* 横向排序 */
+}
+
+/* 下拉框图标设置 */
+#hd2 img {
+  width: 160px;
+  height: 110px;
+}
+
+/* 搜索框 */
+#hd4 {
+  position: absolute;
+  /* 脱离父级 */
+  width: 309px;
+  top: 65px;
+  left: 1066px;
+}
+
+#searchButton {
+  width: 51px;
+  height: 50px;
+  border: 1px solid #e0e0e0;
+  padding: 1px 6px;
+  font-size: 30px;
+  /* 搜字大小 */
+  float: right;
+}
+
+#searchButton:hover {
+  background-color: #FF6700;
+  color: white;
+}
+
+#searchTerm {
+  width: 245px;
+  border: 1px solid #e0e0e0;
+  padding: 5px;
+  height: 39px;
+  border-radius: 5px 0 0 5px;
+  /* 搜索框圆角 */
+  color: black;
+}
+
+
+/* 焦点内容 */
+
+.展示大小 {
+  width: 230px;
+  height: 280px;
+}
+
+#中图 {
+  width: 230px;
+  height: 300px;
+}
+
+#bd1 {
+  width: 1226px;
+}
+
+#ba2 {
+  width: 1226px;
+  height: 460px;
+}
+
+/* 焦点大图 */
+#ba2 img {
+  height: 460px;
+}
+
+/* 图片上一张和下一张 */
+.around {
+  display: inline-block;
+  position: absolute;
+  color: rgba(0, 0, 0, 0);
+  line-height: 69px;
+  width: 41px;
+  height: 69px;
+  top: 45%;
+}
+
+/* 上一张 */
+#Previous {
+  right: 72%;
+  background: url(../images/向左1.png);
+}
+
+#Previous:hover {
+  background: url(../images/向左2.png);
+}
+
+/* 下一张 */
+#Next {
+  right: 10%;
+  background: url(../images/向右1.png);
+}
+
+#Next:hover {
+  background: url(../images/向右2.png);
+}
+
+/* 左侧导航栏 */
+#bd2 {
+  position: absolute;
+  /*  脱离父级 */
+  float: left;
+  background-color: rgba(0, 0, 0, .6);
+  /* 背景颜色，透明度 */
+  width: 234px;
+  padding: 20px 0px;
+  top: 140px;
+}
+
+.ba1 tr {
+  width: 265px;
+  height: 76.56px;
+}
+
+.bt1 td {
+  /* 修饰表格 */
+  padding: 18px;
+  background-color: white;
+}
+
+.bt1 {
+  z-index: 1;
+  /* 显示在最上层 */
+  /* 鼠标悬停显示的菜单 */
+  position: absolute;
+  /* 使此窗口脱离父级窗口显示 */
+  border-collapse: collapse;
+  /* 取消表格中间的间隙 */
+  left: 234px;
+  top: 0px;
+  /* 距离左边和上边的距离 */
+  padding: 4px 0px;
+  height: 40px;
+  background-color: white;
+  display: none;
+  /* 隐藏窗口 */
+}
+
+/* 鼠标经过.bd3时显示.bt1窗口 */
+.bd3:hover .bt1 {
+  display: block;
+  /* 将窗口转换为块元素 */
+}
+
+.ba1 {
+  color: white;
+  /* 字体颜色 */
+  height: 42px;
+  /* 每一个块的高度 */
+  line-height: 42px;
+  /* 行高 */
+  padding-left: 30px;
+  /* 内边距 */
+}
+
+.bd3:hover {
+  /* 鼠标经过状态 */
+  background-color: #ff6700;
+  /* 背景颜色 */
+}
+
+.ba2 {
+  display: block;
+  width: 212px;
+  height: 40px;
+  line-height: 40px;
+  /* 设置行高后a标签的文字就会居中 */
+  white-space: nowrap;
+  /* 强制文本不换行 */
+  overflow: hidden;
+  /* 修剪溢出的文本 */
+  text-overflow: ellipsis;
+  /* 用…替换溢出的文本 */
+}
+
+.ba2:hover {
+  color: #ff6700;
+  /* 鼠标经过时的字体颜色 */
+}
+
+.ba2 img {
+  /* 修饰图片 */
+  height: 40px;
+  width: 40px;
+  display: block;
+  /* 类型转换 */
+  float: left;
+  /* 左对齐 */
+  margin-right: 10px;
+}
+
+/* >的修饰 */
+.ba1 strong {
+  padding-right: 20px;
+  float: right;
+  /* 居右 */
+}
+
+#bd4 {
+  width: 1226px;
+  overflow: hidden;
+  /* 浮动不影响布局 */
+  margin: 14px 0px 30px 0px;
+}
+
+#bd6 a {
+  margin-left: 10px;
+}
+
+#bd6 {
+  float: right;
+}
+
+#bd5 {
+  float: left;
+  width: 234px;
+  height: 170px;
+  background-color: #5f5750;
+}
+
+.bd2i {
+  width: 316px;
+  height: 170px;
+}
+
+#小米闪购 {
+  height: 58px;
+  line-height: 58px;
+}
+
+#无活动 {
+  overflow: hidden;
+  width: 1226px;
+  height: 340px;
+  padding-bottom: 40px;
+}
+
+#RedmiNote7Pro {
+  width: 1226px;
+  height: 120px;
+  margin-bottom: 42px;
+}
+
+.bg {
+  float: left;
+  text-align: center;
+  width: 234px;
+  height: 339px;
+  border-top: 1px solid orange;
+  background: rgba(0, 0, 0, 0.02);
+  margin-right: 14px;
+}
+
+.bg1 {
+  background-color: #f1eded;
+}
+
+.bg1 img {
+  margin: 120px 0 25px 0;
+}
+
+.bg5 {
+  margin-right: 0px;
+}
+
+.bu1 li {
+  float: left;
+  width: 70px;
+  height: 82px;
+  text-align: center;
+  font-size: 12px;
+  margin: 0 3px;
+}
+
+.bu1 a {
+  display: block;
+  padding-top: 18px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.bu1 a:hover {
+  color: white;
+}
+
+.bu1 i {
+  font-size: 32px;
+}
+
+
+/* 主内容区域 */
+
+#content {
+  padding-top: 22px;
+  background-color: whitesmoke;
+}
+
+.cd1 {
+  width: 1210px;
+  height: 58px;
+}
+
+.cd1 h2 {
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 58px;
+  float: left;
+}
+
+.cd1 a {
+  height: 24px;
+  font-size: 16px;
+  margin: 17px 0px 0px 30px;
+  float: right;
+}
+
+.cd1 a:hover {
+  color: #FF6700;
+  border-bottom: #FF6700 solid 2px;
+}
+
+.cd4 {
+  float: left;
+}
+
+.cd4:hover {
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.05);
+  /* 阴影 */
+  transform: translateY(-2px);
+  /* 鼠标经过向左移动 */
+}
+
+.cd4 img {
+  width: 234px;
+  height: 614px;
+}
+
+.cd5 {
+  float: left;
+  padding-bottom: 20px;
+  margin: 0px 0px 14px 14px;
+  background-color: white;
+}
+
+.cd5:hover {
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  /* 阴影 */
+  transform: translateY(-2px);
+  /* 鼠标经过向左移动 */
+}
+
+.cd12 {
+  float: left;
+  padding-bottom: 20px;
+  margin-bottom: 14px;
+  background-color: white;
+}
+
+.cd12:hover {
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+/* 绿色新品字样修饰 */
+.cd6 {
+  width: 64px;
+  margin: 0px auto;
+  /* 绿块位置居中 */
+  text-align: center;
+  /* 位置位置居中 */
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.cd7 {
+  float: left;
+  width: 230px;
+  height: 117px;
+  margin: 0px 0px 14px 14px;
+  background-color: white;
+  padding-top: 26px;
+}
+
+.cd7:hover {
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.cd7 img {
+  width: 80px;
+  height: 80px;
+  float: right;
+  margin-right: 20px;
+}
+
+.ca3 {
+  display: block;
+  float: left;
+  margin: 10px 0 0 30px;
+}
+
+.ca3 p {
+  color: black;
+  line-height: 30px;
+}
+
+.ca3 span {
+  color: #FF6700;
+  font-size: 14px;
+}
+
+.浏览更多 {
+  float: left;
+  width: 230px;
+  height: 93px;
+  margin: 0px 0px 14px 14px;
+  background-color: white;
+  padding-top: 50px;
+}
+
+.浏览更多:hover {
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.浏览更多 img {
+  width: 50px;
+  height: 50px;
+}
+
+.ca2 {
+  display: block;
+  float: left;
+  margin-left: 30px;
+  margin-right: 45px;
+}
+
+.ca2 h2 {
+  font-size: 18px;
+  color: black;
+  font-weight: 400;
+}
+
+.ca2 p {
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.背色1 {
+  background-color: #83c44e;
+  color: white;
+}
+
+.背色2 {
+  background-color: #E53935;
+  color: white;
+}
+
+.透明 {
+  background-color: transparent;
+  color: transparent;
+}
+
+.ca1 {
+  display: block;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.cd5 img {
+  display: block;
+  height: 160px;
+  margin: 0 auto;
+}
+
+.cp1 {
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: center;
+  color: #B0B0B0;
+  padding-left: 11px;
+  width: 210px;
+  white-space: nowrap;
+  /* 强制文本不换行 */
+  overflow: hidden;
+  /* 修剪溢出的文本 */
+  text-overflow: ellipsis;
+  /* 用…替换溢出的文本 */
+}
+
+.cp2 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.cd5 span,
+.cd5 del,
+.ca1 {
+  font-size: 14px;
+  text-align: center;
+}
+
+.cd5 span {
+  color: #FF6700;
+}
+
+.cd5 del {
+  color: #B0B0B0;
+}
+
+.长图 {
+  width: 1210px;
+  height: 120px;
+}
+
+/* 要重新设置属性，不继承父级要用id */
+
+#cd10 {
+  overflow: hidden;
+}
+
+.cd8 {
+  background-color: white;
+  width: 292px;
+  margin: 0 14px 14px 0;
+  float: left;
+}
+
+.cd11 {
+  margin-right: 0;
+}
+
+.cd8 img {
+  width: 100%;
+  height: 220px;
+  margin-bottom: 28px;
+}
+
+#cp3 {
+  color: #B0B0B0;
+  margin-bottom: 8px;
+}
+
+.cd8 h5 {
+  display: inline;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.cd8 p {
+  font-size: 14px;
+  width: 240px;
+  margin: 0 28px 22px 28px;
+}
+
+.cd9 {
+  margin: 0 28px;
+  padding-bottom: 30px;
+}
+
+#ch5 {
+  color: #FF6700;
+}
+
+.cd8:hover {
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+
+
+/* 页面底部 */
+
+.f1d1 {
+  overflow: hidden;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.f1d1 a {
+  display: block;
+  float: left;
+  width: 241px;
+  margin: 27px 0;
+}
+
+.f1a1 {
+  border-right: 1px solid #e0e0e0;
+}
+
+.f1d1 a:hover {
+  color: #FF6700;
+}
+
+.f1d2 {
+  overflow: hidden;
+  padding: 40px 0;
+}
+
+dl {
+  float: left;
+  width: 160px;
+  height: 112px;
+}
+
+dt {
+  margin: -1px 0 26px;
+  font-size: 14px;
+}
+
+dd {
+  margin-top: 10px;
+}
+
+dd a {
+  font-size: 12px;
+  color: #757575;
+}
+
+dd a:hover {
+  color: #FF6700;
+}
+
+#f2 {
+  background-color: whitesmoke;
+}
+
+.f1d3 {
+  border-left: 1px solid #e0e0e0;
+  float: right;
+  width: 249px;
+  height: 125px;
+  text-align: center;
+}
+
+#f1p1 {
+  color: #FF6700;
+  font-size: 22px;
+}
+
+#f1p2 {
+  color: #616161;
+  font-size: 12px;
+}
+
+.f1d3 a {
+  display: block;
+  border: 1px solid #FF6700;
+  color: #ff6700;
+  font-size: 12px;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  margin: 20px 0 10px 64px;
+}
+
+.f1关注 p {
+  line-height: 24px;
+  float: left;
+  color: #616161;
+  font-size: 12px;
+  margin: 0 -73px 0 73px;
+}
+
+.f1关注 i:hover {
+  color: #FF6700;
+}
+
+#f2d3 {
+  padding: 30px 0px;
+}
+
+#图标 {
+  float: left;
+  width: 56px;
+  margin-right: 10px;
+}
+
+#f2d2 {
+  float: left;
+}
+
+#f2d2 a {
+  font-size: 12px;
+}
+
+#f2d2 img {
+  height: 28px;
+}
+
+.f2a1 {
+  color: #757575;
+}
+
+#f2d2 span {
+  color: #757575;
+  font-size: 12px;
+}
+
+.f2a2 {
+  color: #B0B0B0;
+}
+
+.f2a1:hover,
+.f2a2:hover {
+  color: #FF6700;
+}
+
+#美好生活 {
+  clear: both;
+  display: block;
+  margin: auto;
+  margin-top: 190px;
+}

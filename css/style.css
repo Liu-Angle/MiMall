@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?w1lm6y');
+  src: url('../fonts/icomoon.eot?w1lm6y#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?w1lm6y') format('truetype'),
+    url('../fonts/icomoon.woff?w1lm6y') format('woff'),
+    url('../fonts/icomoon.svg?w1lm6y#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="字体-"],
+[class*=" 字体-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.字体-chat_bubble:before {
+  content: "\e905";
+}
+
+.字体-sd_storage:before {
+  content: "\e903";
+}
+
+.字体-gift:before {
+  content: "\e907";
+}
+
+.字体-retweet:before {
+  content: "\f079";
+}
+
+.字体-number1:before {
+  content: "\1f54a";
+}
+
+.字体-number:before {
+  content: "\e908";
+}
+
+.字体-time1:before {
+  content: "\e90a";
+}
+
+.字体-facebook:before {
+  content: "\e909";
+}
+
+.字体-sina-weibo:before {
+  content: "\e900";
+}
+
+.字体-shopping-cart1:before {
+  content: "\e904";
+}
+
+.字体-location:before {
+  content: "\e901";
+}
+
+.字体-credit-card:before {
+  content: "\e93f";
+}
+
+.字体-search:before {
+  content: "\e986";
+}
+
+.字体-wrench:before {
+  content: "\e991";
+}
+
+.字体-wechat:before {
+  content: "\e902";
+}
